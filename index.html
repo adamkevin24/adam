@@ -3,205 +3,10 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Adam Kevin Portofolio</title>
-    <style>
-      *,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
- 
-body {
-  font-family: 'Quicksand', sans-serif;
- 
-  height: 100vh;
-  margin: 0;
- 
-  display: flex;
-  flex-direction: column;
-}
- 
-header.navbar-container {
-  width: 100%;
-  max-width: 1200px;
-  padding-block: 1rem;
-  margin-inline: auto;
- 
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
- 
-  z-index: 9999;
-}
- 
-header.navbar-container .logo img {
-  width: 150px;
-}
- 
-header.navbar-container .nav-list ul {
-  padding-left: 0;
- 
-  display: flex;
-  justify-content: center;
-  gap: 2rem 1rem;
-}
- 
-header.navbar-container .nav-list li {
-  list-style-type: none;
-}
- 
-header.navbar-container .nav-list li a {
-  padding: 0.5rem 1.5rem;
-  border-radius: 999px;
- 
-  text-decoration: none;
-  font-size: 1.05rem;
-  font-weight: 500;
-  color: black;
- 
-  transition: all 0.2s ease-in-out;
-}
- 
-header.navbar-container .nav-list li:hover a {
-  background-color: #425c77;
-  color: white;
-}
-
-main {
-  flex: 1;
-
-  width: 100%;
-  max-width: 1200px;
-  margin-inline: auto;
-  padding: 2rem 4rem;
-
-  display: flex;
-  align-items: center;
-}
-
-main .content {
-  flex: 1;
-
-  display: flex;
-  align-items: center;
-}
-
-main .content .content-description {
-  flex: 1 1;
-}
-main .content .content-description .title {
-  margin-block: 1rem;
-  font-size: 3.5rem;
-}
-main .content .content-description p {
-  font-size: 1.2rem;
-  line-height: 1.7rem;
-}
-main .content .content-description button {
-  padding: 0.8rem 2.5rem;
-  border: 3px solid transparent;
-  border-radius: 999px;
-  margin-block-start: 1rem;
-  background-color: #2d3e50;
-  font-family: 'Quicksand', sans-serif;
-  text-transform: uppercase;
-  font-size: 1rem;
-  font-weight: 700;
-  color: white;
-  cursor: pointer;
-  transition: all 0.15s ease-in;
-}
-main .content .content-description button:hover {
-  border: 3px solid #2d3e50;
-  background-color: transparent;
-  color: #2d3e50;
-}
-
-main .content .content-image {
-  flex: 1;
- 
-  display: flex;
-}
- 
-main .content .content-image img {
-  width: 300px;
-  min-width: 250px;
-  margin: auto;
-}
- 
-main aside {
-  position: fixed;
-  inset-block: 0;
-  inset-inline-end: 0;
-}
-main aside .social-media {
-  height: 100%;
-  display: flex;
-}
-main aside .social-media ul {
-  padding: 1.5rem 1rem;
-  border-top-left-radius: 12px;
-  border-bottom-left-radius: 12px;
-  margin: auto;
-  background-color: #2d3e50;
-  display: flex;
-  flex-flow: column nowrap;
-  align-items: center;
-  justify-content: center;
-  gap: 1.5rem;
-}
-main aside .social-media li {
-  list-style-type: none;
-}
-
-main aside .social-media li a {
-  text-decoration: none;
-  font-size: 1.5rem;
-  color: white;
-  transition: all 0.1s ease-in-out;
-}
-main aside .social-media li a:hover {
-  color: #89b0d9;
-}
-
-@media screen and (max-width: 768px) {
-  header.navbar-container {
-    flex-direction: column;
-  }
-
-  header.navbar-container .nav-list ul {
-    flex-wrap: wrap;
-    column-gap: .5rem;
-  }
-
-  main .content {
-    flex-direction: column;
-    gap: 2rem;
-  }
-
-  main {
-    padding: 1rem 3rem;
-  }
-
-  main .content .content-description p {
-    font-size: 1rem;
-  }
-
-  main .content .content-image {
-    order: -1;
-  }
-}
-
-  footer {
-    padding: 10px;
-    text-align: center;
-    font-weight: lighter;
-  }
-
-    </style>
+    <title>Adam Kevin Nyoba</title>
  
     <!-- My Own CSS -->
-    <link rel="stylesheet" href="css/app.css" />
+    <link rel="stylesheet" href="assets/css/app.css" />
  
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -223,43 +28,119 @@ main aside .social-media li a:hover {
   <body>
     <header class="navbar-container">
       <div class="logo">
-        <img src="https://github.com/adamkevin24/adam/blob/d46c706922ca5b2225e9a79bf2475d4a14c6f417/dicoding-header-logo.png" alt="adam kevin" />
+        <img src="assets/img/images.png" alt="Programmer" />
       </div>
       <nav class="nav-list">
         <ul>
-          <li><a href="#">Beranda</a></li>
-          <li><a href="#">Menu</a></li>
-          <li><a href="#">Apa yang Baru</a></li>
-          <li><a href="#">Kontak</a></li>
+          <li><a href="#Beranda">Beranda</a></li>
+          <li><a href="#Spesialized">Spesialized In</a></li>
+          <li><a href="#Porotofolio">Porotofolio</a></li>
+          <li><a href="#Kontak">Kontak</a></li>
         </ul>
       </nav>
     </header>
 
     <main>
       <div class="content">
-        <div class="content-description">
+        <div id="Beranda" class="content-description">
           <h1 class="title">Adam Kevin</h1>
           <p>
-            Kami yakin pendidikan teknologi adalah fondasi bagi setiap bangsa agar menjadi yang
-            terdepan dalam menghadapi dunia digital. Dicoding hadir sebagai platform pendidikan
-            teknologi yang membantu menghasilkan talenta digital berstandar global. Semua demi
-            mengakselerasi Indonesia agar menjadi yang terdepan.
+            Saya adalah mahasiswa dari jurusan Informatika di Universitas Gunadarma 
+            yang siap mencari peluang pengalaman baru. Saya antusias untuk belajar 
+            dan siap terlibat aktif dalam suatu kegiatan. Saya memiliki minat dalam 
+            bidang web development dan akan sangat senang jika diberi kesempatan untuk 
+            menjelajahi peluang baru.
           </p>
+  
+          <button>Programmer Muda</button>
 
-          <button>Lebih lanjut</button>
+          <article id="Spesialized" class="specialized-in">  
+            <h1>Specialized In</h1>  
+            <div class="services">  
+              <div class="service-card">  
+                <i class="fas fa-crown"></i>  
+                <h3>UI/UX Design</h3>  
+                <p>Menawarkan sesuatu yang ada didalam pikiran melalui Design.</p>  
+              </div>  
+              <div class="service-card">  
+                <i class="fas fa-database"></i>  
+                <h3>Data Scientist</h3>  
+                <p>Mempermudah menganalisis dan menafsirkan data menjadi sebuah keputusan.</p>  
+              </div>  
+              <div class="service-card">  
+                <i class="fas fa-pencil-alt"></i>  
+                <h3>Copy Writing</h3>  
+                <p>Mempromosikan produk dengan cara yang efektif.</p>  
+              </div>  
+            </div>  
+          </article>
+
+          <article id="Porotofolio" class="portofolio">
+            <h1>Portofolio</h1>
+            <div class="portofolio-cards">
+              <div class="portofolio-card">
+                <img src="assets/img/WhatsApp Image 2024-11-22 at 22.22.10_3d341a99.jpg" alt="Organisasi Sekolah">
+                <h2>Organisasi Sekolah</h2>
+                <div class="portofolio-tags">
+                  <span>Organisasi</span>
+                  <span>Kerja Sama</span>
+                </div>
+                <p>Wakil Ketua Eskul Badminton,Memimpin divisi perlengkapan dengan tugas melakukan pencatatan tentang barang yang diperlukan serta bertanggung jawab memastikan semua barang sudah siap untuk digunakan pada saat ekskul berlangsung.</p>
+              </div>
+              <div class="portofolio-card">
+                <img src="assets/img/novi.jpg" alt="Luar Kampus">
+                <h2>Organisasi Luar Kampus</h2>
+                <div class="portofolio-tags">
+                  <span>Organisasi</span>
+                  <span>Kerja Sama</span>
+                </div>
+                <p>NOVOCLUB merupakan organisasi luar kampus yang memberikan pengalaman menarik kepada seluruh mahasiswa yang ada di Indonesia. Banyak kegiatannya, salah satu yang saya ikuti ialah program bebas sampah</p>
+              </div>
+              <div class="portofolio-card">
+                <img src="assets/img/medis.jpg" alt="Volunteer">
+                <h2>Volunteer</h2>
+                <div class="portofolio-tags">
+                  <span>Organisasi</span>
+                  <span>Kerja Sama</span>
+                </div>
+                <p>Tim medis sepakbola wanita u10 yang diselenggarakan oleh Milklife, Bertanggung jawab dalam kesehatan peserta lomba, serta selalu siap sedia mengangkat peserta lomba yang tiba-tiba terkapar di lapangan</p>
+              </div>
+            </div>
+          </article>
+
+          <article id="Kontak" class="contact-section">
+            <h1>Kontak</h1>
+            <div class="contact-form">
+             <form>
+               <input type="text" name="nama" placeholder="Nama">
+               <input type="email" name="email" placeholder="Email">
+               <textarea name="pesan" placeholder="Pesan"></textarea>
+               <button type="submit">Kirimkan Pesan</button>
+             </form>
+            <div class="contact-info">
+              <p><i class="fas fa-map-marker-alt"></i> Alamat: Kec. Ciseeng Kab. Bogor</p>
+              <p><i class="fas fa-phone"></i> Telepon: +62 838 7168 4899</p>
+              <p><i class="fas fa-envelope"></i> Email: adamkevin514@gmail.com</p>
+            </div>
+          </div>
+        </article>
         </div>
+
+
+        
+        
         <div class="content-image">
-          <img src="img/circle-g.jpg" alt="Dicoding Indonesia" title="dicoding"/>
+          <img src="assets/img/WhatsApp Image 2024-11-21 at 12.29.25_0d0dc0ba.jpg" alt="Adam Kevin" class="rounded"/>
         </div>
       </div>
 
       <aside>
         <div class="social-media">
           <ul>
-            <li><a href="#"><i class="fab fa-youtube"></i></a></li>
-            <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-            <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+            <li><a href="https://youtube.com/@coffeeball125?si=mfZnm3cecVShSOXx" target="_blank" rel="noopener"><i class="fab fa-youtube"></i></a></li>
+            <li><a href="https://id.linkedin.com/in/adam-kevin-51b48329a" target="_blank" rel="noopener"><i class="fab fa-linkedin-in"></i></a></li>
+            <li><a href="https://www.tiktok.com/@adamkevin24?_t=8rbyIvDInF1&_r=1" target="_blank" rel="noopener"><i class="fab fa-tiktok"></i></a></li>
+            <li><a href="https://www.instagram.com/adamkvnn/profilecard/?igsh=MXZwYjJnaTJwMHQ2ZA==" target="_blank" rel="noopener"><i class="fab fa-instagram"></i></a></li>
           </ul>
         </div>
       </aside>
